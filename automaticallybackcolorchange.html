@@ -1,0 +1,37 @@
+<html>
+<head>
+<title> Using the SetInterval()  method</title>
+<script language="javascript">
+cols=new Array("red","green","blue","yellow");
+index=0;
+window.defaultStatus="Time Intervals";
+function fun()
+{
+if (index>3)
+{
+index=0;
+document.bgColor=cols[index];
+index++;
+}
+else
+{
+document.bgColor=cols[index];
+index++;
+}
+}
+function startbk()
+{
+ref=setInterval("fun()",2000);
+}
+function stopbk()
+{
+clearInterval(ref);
+}
+</script>
+</head>
+<body>
+<center>
+<input type="button" name="b1" value="Start color change" onClick='startbk()'>
+<input type="button" name="b2" value="Stop color change" onClick='stopbk()'>
+</body>
+</html>

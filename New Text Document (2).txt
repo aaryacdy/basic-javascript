@@ -1,0 +1,13 @@
+<html>
+<body>
+<script language="javascript">
+a=new Array(5)
+var i,b=1
+for(i=0;i<5;i++)
+{
+a[i]=b
+document.write(a[i])
+b=b+1
+}
+</script>
+</body></html>

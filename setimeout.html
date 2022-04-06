@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>javascript</title>
+<script language="javascript">
+window.defaultStatus="working with Timeout";
+
+function disp()
+{
+document.write("<br><br><br>");
+document.write("center");
+document.write('<img src="painting.gif">');
+document.write("</center>");
+}
+function startbk()
+{
+setTimeout('disp()',3000);
+}
+</script>
+</head>
+<body>
+<center>
+<p> An Image will be displayed after 3 seconds when u click button </p>
+<input type="button" name="b1" value="start " onClick='startbk()'> 
+</body>
+</html>
